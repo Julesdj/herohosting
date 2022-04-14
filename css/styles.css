@@ -13,10 +13,10 @@ html {
 }
 
 body{
+    color: var(--color-text);
     font-family: Inter, Arial, Helvetica, sans-serif;
     font-size: 2.4rem;
     line-height: 1.5;
-    color: var(--color-text);
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -66,9 +66,9 @@ a{
 
 .link-arrow{
     color: var(--color-accent);
-    text-transform: uppercase;
     font-size: 2rem;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .link-arrow::after{
@@ -84,5 +84,37 @@ a{
 @media screen and (min-width: 1024px){
     .link-arrow{
         font-size: 1.5rem;
+    }
+}
+
+/* Badges */
+.badge{
+    border-radius: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0.5rem 2rem;
+    white-space: nowrap; /* prevent text from breaking */
+}
+
+.badge--primary{
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.badge--secondary{
+    background-color: var(--color-secondary);
+    color: white;
+}
+
+.badge--small{
+   font-size: 1.6rem;
+}
+
+@media screen {
+    .badge{
+        font-size: 1.6rem;
+    }
+    .badge--small{
+        font-size: 1.4rem;
     }
 }
