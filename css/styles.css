@@ -320,6 +320,21 @@ a{
     margin-bottom: 2rem;
 }
 
+/* Popular badge */
+.plan--popular .card__header{
+    position: relative;
+}
+
+.plan--popular .card__header::after{
+    content: url(../images/popular.svg);
+    position: absolute;
+    top: -6px;
+    right: 4%;
+    width: 40px;
+    display: inline-block;
+}
+/* End Popular badge */
+
 @media screen and (min-width: 1024px){
     .plan__name{
         font-size: 1.4rem;
