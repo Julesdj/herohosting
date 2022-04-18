@@ -774,3 +774,24 @@ a{
     max-width: 500px;
     margin: 0 auto;
 }
+
+/* Featured Block*/
+.featured{
+    gap: 4rem 2rem;
+    margin: 8rem 0;
+}
+
+.featured__heading{
+    margin-bottom: 1rem 0;
+}
+
+.featured__image{
+    width: 100%;
+}
+
+@media screen and (min-width: 768px){
+    .featured:nth-of-type(even) .featured__content{
+        order: 2;
+    }
+    
+}
