@@ -507,7 +507,7 @@ a{
 
 /* Testimonials Component*/
 .testimonial{
-   padding: 3.5rem;
+   padding: 3rem;
 }
 
 .testimonial__image{
@@ -516,6 +516,10 @@ a{
 
 .testimonial__image > img{
     width: 100%;
+}
+
+.quote__text{
+    font-size: 2.4rem;
 }
 
 .testimonial__image .icon-container{
@@ -627,6 +631,7 @@ a{
 
 .block__header{
     text-align: center;
+    margin-bottom: 4rem;
 }
 
 .block__heading{
