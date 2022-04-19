@@ -32,7 +32,6 @@ body{
     font-family: Inter, Arial, Helvetica, sans-serif;
     font-size: 2.4rem;
     line-height: 1.5;
-    padding: 3.2rem;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -397,9 +396,7 @@ a{
     transform: scale(1.05);
 }
 
-.plan--popular:hover{
-    transform: scale(1.15);
-}
+
 
 @media screen and (min-width: 1024px){
     .plan--popular{
@@ -417,6 +414,10 @@ a{
     }
     .plan__description{
         font-size: 1.7rem;
+    }
+
+    .plan--popular:hover{
+        transform: scale(1.15);
     }
 }
 
@@ -525,8 +526,7 @@ a{
 .testimonial__image .icon-container{
     position: absolute;
     top: 3rem;
-    right: -32px;
-
+    right: -30px;
 }
 
 @media screen and (min-width: 768px){
@@ -541,6 +541,15 @@ a{
 }
 
 /* Callout Component*/
+.callout--block{
+    max-width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: 10rem;
+    
+}
+
 .callout{
     padding: 4rem;
     border-radius: 5px;
@@ -581,6 +590,8 @@ a{
         text-align: left;
     }
 }
+
+
 
 /* collapsibles Component*/
 .collapsible__header{
@@ -653,20 +664,37 @@ a{
 
 .block--skewed-left{
     padding-bottom: calc(var(--padding-vertical) + 4rem);
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); /* clip path top-left, top-right, bottom-right, bottom-left*/
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%); /* clip path top-left, top-right, bottom-right, bottom-left*/
 }
 
 .block--skewed-right{
     padding-bottom: calc(var(--padding-vertical) + 4rem);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%); /* clip path top-left, top-right, bottom-right, bottom-left*/
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%); /* clip path top-left, top-right, bottom-right, bottom-left*/
 }
 
-.ontainer{
+@media screen and (min-width: 768px){
+    .block--skewed-left{
+        padding-bottom: calc(var(--padding-vertical) + 4rem);
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); /* clip path top-left, top-right, bottom-right, bottom-left*/
+    }
+    
+    .block--skewed-right{
+        padding-bottom: calc(var(--padding-vertical) + 4rem);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%); /* clip path top-left, top-right, bottom-right, bottom-left*/
+    }
+    
+}
+
+.container{
     max-width: 1200px;
     margin: 0 auto;
 }
 
 /* Navigation bar Component*/
+.header{
+    background-color: black;
+}
+
 .nav{
     background-color: black;
     display: flex;
@@ -818,6 +846,7 @@ a{
     width: 100%;
 }
 
+
 @media screen and (min-width: 768px){
     .block-showcase .grid{
         grid-template-columns: 50% 50%;
@@ -838,6 +867,7 @@ a{
 /* Footer Component*/
 .footer{
     background-color: #232323;
+    padding-top: 18rem;
 }
 
 .footer a {
